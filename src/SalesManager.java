@@ -1,11 +1,11 @@
 public class SalesManager {
-    protected int[] sales;
+    protected static int[] sales;
 
     public SalesManager(int[] sales) {
         this.sales = sales;
     }
 
-    public int max() {
+    public static int max() {
         int max = -1;
         for (int sale : sales) {
             if (sale > max) {
